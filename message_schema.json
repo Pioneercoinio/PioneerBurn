@@ -1,0 +1,31 @@
+{
+    "$id": "https://github.com/Pioneercoinio/PioneerBurn/message_schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Pioneercoin Burn Message",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["pcoin_address", "pcoin_amount", "declaration_time", "eth_address"],
+    "properties" : {
+        "pcoin_address": {
+            "type": "string",
+            "description": "The pcoin address the transfer initiated from",
+            "minLength": 34,
+            "maxLength": 34
+        },
+        "pcoin_amount": {
+            "type": "string",
+            "description": "Amount of pcoin transfered to burn address"
+        },
+        "declaration_time": {
+            "type": "string",
+            "description": "Date and time in ISO format this declaration was made.",
+            "format": "YYYYMMDD-HH:MM:SS",
+            "pattern": "^[0-9]{4}[0-9]{2}[0-9]{2}-[0-9]{2}:[0-9]{2}:[0-9]{2}$"
+        },
+        "eth_address": {
+            "type": "string",
+            "description": "Address to send prt tokens to",
+            "pattern": "^0x[a-fA-F0-9]{40}$"
+        }
+    }
+}
