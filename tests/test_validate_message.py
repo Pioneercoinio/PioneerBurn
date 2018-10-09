@@ -93,3 +93,7 @@ def test_validate_fails(description, message, valid):
     else:
         with pytest.raises(jsonschema.exceptions.ValidationError):
             validate_message.validate_message_text(message)
+
+
+def test_verify_sample():
+    assert validate_message.validate_message_file("message_sample.txt")

@@ -1,8 +1,7 @@
-#! python3
-
 import argparse
 import json
 import jsonschema
+import sys
 
 
 SCHEMA_FILE = "message_schema.json"
@@ -40,7 +39,14 @@ def main():
         description='Validate Pioneer Burn message.')
     parser.add_argument("-f", "--file", help="File containing message.")
     args = parser.parse_args()
-    validate_message_file(args.file)
+    try:
+        validate_message_file(args.file)
+    except jsonschema.exceptions.ValidationError as err:
+        print("Error with message:")
+        print(err)
+        sys.exit(1)
+
+    print ("Message is valid!")
 
 
 if __name__ == "__main__":
