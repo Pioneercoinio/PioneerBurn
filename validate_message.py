@@ -37,7 +37,7 @@ def main():
     '''
     parser = argparse.ArgumentParser(
         description='Validate Pioneer Burn message.')
-    parser.add_argument("-f", "--file", help="File containing message.")
+    parser.add_argument("-f", "--file", help="File containing message.", required=True)
     args = parser.parse_args()
     try:
         validate_message_file(args.file)

@@ -2,7 +2,7 @@
 
 **NOTE** coin burning is not yet active. Do not burn any tokens yet.
 
-The effort to keep the Pioneercoin community centers around transferring
+The effort to keep the Pioneercoin community alive centers around transferring
 pcoin into PRT, a token on the ethereum network.
 
 This repository contains the information on how to burn your pcoin and ensure
@@ -29,7 +29,7 @@ and replace the contents with your burn details.
 
 ### Validate message
 
-When the message is completed validate that it is well formed with:
+When the message is created, validate that it is well formed with:
 
 ```
 > python validate_message.py --file [your_message_file]

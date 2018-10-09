@@ -60,20 +60,20 @@ def main():
     subparsers = parser.add_subparsers(help='sub-command help')
 
     parser_create_keys = subparsers.add_parser('create_keys', help='Create new keys')
-    parser_create_keys.add_argument('--public', help='File to store the public key.')
-    parser_create_keys.add_argument('--private', help='File to store the private key.')
+    parser_create_keys.add_argument('--public', help='File to store the public key.', required=True)
+    parser_create_keys.add_argument('--private', help='File to store the private key.', required=True)
     parser_create_keys.set_defaults(func=create_keys)
 
     parser_sign_message = subparsers.add_parser('sign', help='Sign message file')
-    parser_sign_message.add_argument('-m', '--message', help='Message to sign')
-    parser_sign_message.add_argument('-k', '--key', help='Private key to use')
+    parser_sign_message.add_argument('-m', '--message', help='Message to sign', required=True)
+    parser_sign_message.add_argument('-k', '--key', help='Private key to use', required=True)
     parser_sign_message.add_argument('-s', '--signature', help='File to store signature (Optional)')
     parser_sign_message.set_defaults(func=sign_message)
 
     parser_verify_message = subparsers.add_parser('verify', help='Verify signature file')
-    parser_verify_message.add_argument('-m', '--message', help='Message signed')
-    parser_verify_message.add_argument('-k', '--key', help='Public key to use')
-    parser_verify_message.add_argument('-s', '--signature', help='Signature')
+    parser_verify_message.add_argument('-m', '--message', help='Message signed', required=True)
+    parser_verify_message.add_argument('-k', '--key', help='Public key to use', required=True)
+    parser_verify_message.add_argument('-s', '--signature', help='Signature', required=True)
     parser_verify_message.set_defaults(func=verify_message)
 
     args = parser.parse_args()
