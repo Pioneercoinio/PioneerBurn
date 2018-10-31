@@ -64,6 +64,8 @@ burn address.
 Pionercoin wallet has the built in ability to sign messages with the private key
 of the loaded pioneercoin account.
 
+![sign message](images/sign_message_window.png)
+
 #### Sign message
 
 Copy the complete contents of your message file and paste it into the message
@@ -71,9 +73,11 @@ field in the UI.
 
 Sign the message.
 
+![sign message](images/signed_message.png)
+
 #### Deliver burn notice
 
-Compose an email to [burn notice email] include the pcoin address used to
+Compose an email to info[at]pioneercoin.io include the pcoin address used to
 sign the message, the signature, and attach the message file.
 
 Once the message is verified and the transaction appears on the pioneercoin
@@ -112,7 +116,7 @@ This will sign the message and write the signature to ```signature_file``` speci
 
 #### Deliver burn notice
 
-Compose an email to [burn notice email] include the public key of the key pair used to
+Compose an email to info[at]pioneercoin.io include the public key of the key pair used to
 sign the message, and attach the message file and the signature file.
 
 **Now** transfer your pcoin to the burn address from your exchange account.
