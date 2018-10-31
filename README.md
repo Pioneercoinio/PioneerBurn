@@ -125,7 +125,7 @@ sign the message, and attach the message file and the signature file.
 **Now** transfer your pcoin to the burn address from your exchange account.
 
 Once the message is verified and the transaction appears on the pioneercoin
-blockchain your PRT tokens will be transfered to the nominated etheruem address.
+blockchain your PRT tokens will be transfered to the nominated ethereum address.
 
 If your transaction appears on the blockhain before the burn notice was received
 your burn notice will be rejected.
