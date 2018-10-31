@@ -92,7 +92,7 @@ blockchain your PRT tokens will be transfered to the nominated etheruem address.
 your pcoin to the burn address. This is for your own protection so that someone
 cannot submit a burn notice for your transaction before you are able to.
 
-To sign your message you will need a public and private pem key.
+To sign your message you will need a public and a private key.
 
 If you already have a public/private key pair you would like to use, skip the next
 section.
