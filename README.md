@@ -68,6 +68,9 @@ of the loaded pioneercoin account.
 
 #### Sign message
 
+Select the address for the account that you sent the pioneer coin from. This 
+should be the same one included in the message body.
+
 Copy the complete contents of your message file and paste it into the message
 field in the UI.
 
