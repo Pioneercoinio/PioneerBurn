@@ -1,6 +1,6 @@
 # Pioneercoin burning mechanism
 
-**NOTE** coin burning is not yet active. Do not burn any tokens yet.
+Pioneercoin burning is **NOW ACTIVE**
 
 The effort to keep the Pioneercoin community alive centers around transferring
 pcoin into PRT, a token on the ethereum network.
@@ -15,6 +15,8 @@ There are two main transfer methods:
 - Directly from an exchange
 
 Both mechanisms are centered around sending a signed message to the PRT developers.
+
+Pioneer Burn address PDKqvR86in3RLXCp1sqKemmsTy2DJmf3m6
 
 ## Create the burn notice
 
